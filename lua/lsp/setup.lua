@@ -33,8 +33,8 @@ mason.setup({
 mason_config.setup({
   ensure_installed = {
     "sumneko_lua",
-    --"tsserver",
-    --"tailwindcss",
+    "tsserver",
+    "tailwindcss",
     "bashls",
     "cssls",
     "dockerls",
@@ -42,10 +42,10 @@ mason_config.setup({
     "html",
     "jsonls",
     "pyright",
-    --"rust_analyzer",
-    --"taplo",
-    --"yamlls",
-    --"gopls",
+    "rust_analyzer",
+    "taplo",
+    "yamlls",
+--    "gopls",
     "clangd",
     "cmake",
   },
@@ -63,13 +63,13 @@ local servers = {
   cssls = require("lsp.config.css"),
   emmet_ls = require("lsp.config.emmet"),
   jsonls = require("lsp.config.json"),
-  tsserver = require("lsp.config.typescript"),
-  yamlls = require("lsp.config.yamlls"),
+--  tsserver = require("lsp.config.typescript"),
+--  yamlls = require("lsp.config.yamlls"),
   dockerls = require("lsp.config.docker"),
-  tailwindcss = require("lsp.config.tailwindcss"),
-  rust_analyzer = require("lsp.config.rust"),
-  taplo = require("lsp.config.taplo"), -- toml
-  gopls = require("lsp.config.gopls"),
+--  tailwindcss = require("lsp.config.tailwindcss"),
+--  rust_analyzer = require("lsp.config.rust"),
+--  taplo = require("lsp.config.taplo"), -- toml
+--  gopls = require("lsp.config.gopls"),
   -- remark_ls = require("lsp.config.markdown"),
   clangd = require("lsp.config.clangd"),
   cmake = require("lsp.config.cmake"),
@@ -86,8 +86,6 @@ for name, config in pairs(servers) do
 end
 
 require("lsp.ui")
-
-
 
 
 
