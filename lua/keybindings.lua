@@ -147,9 +147,9 @@ pluginKeys.mapLSP = function(mapbuf)
   -- go xx
   mapbuf("n", "C-]", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
   mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)
-  mapbuf("n", "C-[", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
+  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
   mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt)
-  mapbuf("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opt)
+  mapbuf("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opt)
   -- diagnostic
   mapbuf("n", "gp", "<cmd>lua vim.diagnostic.open_float()<CR>", opt)
   mapbuf("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
