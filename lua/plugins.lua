@@ -16,11 +16,12 @@ packer.startup(
 
    --------------------------------Plugins-------------------------------------
    -- nvim-tree (左侧文件浏览器)
-   use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+   use({ "kyazdani42/nvim-tree.lua", requires = {"kyazdani42/nvim-web-devicons", opt = true} })
    -- bufferline
    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
    -- lualine
-   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+   --use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+   use("nvim-lualine/lualine.nvim")
    use("arkav/lualine-lsp-progress")
    -- telescope
    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
@@ -37,7 +38,7 @@ packer.startup(
    use({ "williamboman/mason.nvim" })
    use({ "williamboman/mason-lspconfig.nvim" })
    use({ "neovim/nvim-lspconfig" })
-    -- 补全引擎
+    -- 补全引擎  LSP补全不够好，需要这个补全支持
     use("hrsh7th/nvim-cmp")
     -- Snippet 引擎
     use("L3MON4D3/LuaSnip")
@@ -67,7 +68,7 @@ packer.startup(
     use("b0o/schemastore.nvim")
     -- Rust 增强
     use("simrat39/rust-tools.nvim")
- 
+
 end)
 
 

@@ -1,5 +1,26 @@
 -- Config nvim-tree
 
+vim.g.nvim_tree_icons = {
+  default = "",
+  symlink = "",
+  git = {
+    unstaged = "",
+    staged = "S",
+    unmerged = "",
+    renamed = "➜",
+    deleted = "",
+    untracked = "U",
+    ignored = "◌",
+  },
+  folder = {
+    default = "",
+    open = "",
+    empty = "",
+    empty_open = "",
+    symlink = "",
+  },
+}
+
 local status, nvim_tree = pcall(require, "nvim-tree")
 if not status then
     vim.notify("没有找到 nvim-tree")
@@ -55,7 +76,24 @@ nvim_tree.setup({
     system_open = {
         cmd = 'wsl-open', -- mac 直接设置为 open
     },
+    renderer = {
+      indent_markers = {
+        enable = false,
+        icons = {
+          corner = "└ ",
+          edge = "│ ",
+          none = "  ",
+        },
+      },
+      icons = {
+        webdev_colors = false,
+        git_placement = "after",
+      },
+    },
 })
+
+
+
 -- 自动关闭
 vim.cmd([[
   autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif

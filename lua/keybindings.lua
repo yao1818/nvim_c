@@ -146,10 +146,10 @@ pluginKeys.mapLSP = function(mapbuf)
   mapbuf("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opt)
   -- go xx
   mapbuf("n", "C-]", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
-  mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)
-  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
-  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt)
-  mapbuf("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opt)
+  mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)          --弹窗查看函数的定义提示
+  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)    --跳转函数声明
+  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt) --跳转到函数实现中
+  mapbuf("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opt)     --列出函数 被引用的地方
   -- diagnostic
   mapbuf("n", "gp", "<cmd>lua vim.diagnostic.open_float()<CR>", opt)
   mapbuf("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
@@ -168,7 +168,7 @@ end
 pluginKeys.cmp = function(cmp)
     return {
         -- 出现补全
-        ["<A-.>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
+        ["<Tab>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
         -- 取消
         ["<A-,>"] = cmp.mapping({
             i = cmp.mapping.abort(),
