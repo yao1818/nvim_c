@@ -80,8 +80,8 @@ nvim_tree.setup({
 --        symlink_arrow = "*",
 --    },
     renderer = {
-      indent_markers = {
-        enable = false,
+      indent_markers = {   --缩进标志
+        enable = true,
         icons = {
           corner = "└ ",
           edge = "│ ",
