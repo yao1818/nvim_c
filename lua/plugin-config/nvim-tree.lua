@@ -1,25 +1,25 @@
 -- Config nvim-tree
 
-vim.g.nvim_tree_icons = {
-  default = "",
-  symlink = "",
-  git = {
-    unstaged = "",
-    staged = "S",
-    unmerged = "",
-    renamed = "➜",
-    deleted = "",
-    untracked = "U",
-    ignored = "◌",
-  },
-  folder = {
-    default = "",
-    open = "",
-    empty = "",
-    empty_open = "",
-    symlink = "",
-  },
-}
+--vim.g.nvim_tree_icons = {
+--  default = "",
+--  symlink = ">",
+--  git = {
+--    unstaged = "",
+--    staged = "S",
+--    unmerged = "",
+--    renamed = "➜",
+--    deleted = "",
+--    untracked = "U",
+--    ignored = "◌",
+--  },
+--  folder = {
+--    default = "",
+--    open = "",
+--    empty = "",
+--    empty_open = "",
+--    symlink = "",
+--  },
+--}
 
 local status, nvim_tree = pcall(require, "nvim-tree")
 if not status then
@@ -76,6 +76,9 @@ nvim_tree.setup({
     system_open = {
         cmd = 'wsl-open', -- mac 直接设置为 open
     },
+--    icons = {
+--        symlink_arrow = "*",
+--    },
     renderer = {
       indent_markers = {
         enable = false,
@@ -87,7 +90,18 @@ nvim_tree.setup({
       },
       icons = {
         webdev_colors = false,
-        git_placement = "after",
+        show = {
+            folder_arrow = true,
+            file = false,
+            folder = false,
+        },
+        glyphs = {
+            symlink = "➜",
+            folder = {
+                arrow_closed = "",
+                arrow_open = "",
+            }
+        },
       },
     },
 })
