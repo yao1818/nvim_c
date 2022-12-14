@@ -75,7 +75,7 @@ nvim_tree.setup({
             folder = false,
         },
         glyphs = {
-            symlink = "➜",
+            symlink = "•", --•➜
             folder = {
                 arrow_closed = "▶",
                 arrow_open = "▽",   -- ∨ ▽ ▷ ▶  ◆ ◇
