@@ -114,7 +114,7 @@ pluginKeys.nvimTreeList = {
   { key = "a", action = "create" },
   { key = "d", action = "remove" },
   { key = "r", action = "rename" },
-  { key = "x", action = "cut" },
+  { key = "x", action = "close_node" },
   { key = "c", action = "copy" },
   { key = "p", action = "paste" },
   { key = "s", action = "system_open" },
