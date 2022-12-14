@@ -1,11 +1,11 @@
 -- 自定义图标
 vim.diagnostic.config({
-  virtual_text = true,
+  virtual_text = false,
   signs = true,
   update_in_insert = false,
-  underline = true,
+  underline = false,
   show_header = false,
-  severity_sort = true,
+  severity_sort = false,
   float = {
     source = "always",
     border = "rounded",
@@ -18,8 +18,8 @@ vim.diagnostic.config({
   },
 })
 
---local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
---for type, icon in pairs(signs) do
---  local hl = "DiagnosticSign" .. type
---  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
---end
+local signs = { Error = "✘", Warn = "★", Hint = "H", Info = "I" }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
