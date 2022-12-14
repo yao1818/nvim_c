@@ -10,6 +10,8 @@ packer.startup(
    --------------------------------Colorshchemes-------------------------------
    use 'folke/tokyonight.nvim'
    use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
+--   use 'christianchiarulli/nvcode-color-schemes.vim'
+--   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
    -- use 'shaunsingh/nord.nvim'
    -- use 'ful1e5/onedark.nvim'
    -- use 'EdenEast/nightfox.nvim'
