@@ -1,25 +1,25 @@
 -- Config nvim-tree
 
-vim.g.nvim_tree_icons = {
-  default = "*",
-  symlink = "*",
-  git = {
-    unstaged = "*",
-    staged = "*",
-    unmerged = "*",
-    renamed = "➜",
-    deleted = "*",
-    untracked = "U",
-    ignored = "◌",
-  },
-  folder = {
-    default = "*",
-    open = "*",
-    empty = "*",
-    empty_open = "*",
-    symlink = "*",
-  },
-}
+--vim.g.nvim_tree_icons = {
+--  default = "",
+--  symlink = ">",
+--  git = {
+--    unstaged = "",
+--    staged = "S",
+--    unmerged = "",
+--    renamed = "➜",
+--    deleted = "",
+--    untracked = "U",
+--    ignored = "◌",
+--  },
+--  folder = {
+--    default = "",
+--    open = "",
+--    empty = "",
+--    empty_open = "",
+--    symlink = "",
+--  },
+--}
 
 local status, nvim_tree = pcall(require, "nvim-tree")
 if not status then
@@ -61,7 +61,7 @@ nvim_tree.setup({
         number = false,
         relativenumber = false,
         -- 显示图标
-        signcolumn = 'no',
+        signcolumn = 'yes',
     },
     actions = {
         open_file = {
@@ -76,9 +76,12 @@ nvim_tree.setup({
     system_open = {
         cmd = 'wsl-open', -- mac 直接设置为 open
     },
+--    icons = {
+--        symlink_arrow = "*",
+--    },
     renderer = {
-      indent_markers = {
-        enable = false,
+      indent_markers = {   --缩进标志
+        enable = true,
         icons = {
           corner = "└ ",
           edge = "│ ",
@@ -87,10 +90,23 @@ nvim_tree.setup({
       },
       icons = {
         webdev_colors = false,
-        git_placement = "after",
+        show = {
+            folder_arrow = true,
+            file = false,
+            folder = false,
+        },
+        glyphs = {
+            symlink = "➜",
+            folder = {
+                arrow_closed = "▶",
+                arrow_open = "▽",   -- ∨ ▽ ▷ ▶  ◆ ◇
+            }
+        },
       },
     },
 })
+
+
 
 -- 自动关闭
 vim.cmd([[
@@ -98,4 +114,4 @@ vim.cmd([[
 ]])
 
 
-
+--符号图案    ✐✎✏✑✒✉✁✂✃✄✆✉☎☏☑✓✔√☐☒✗✘ㄨ✕✖✖☢☠☣✈★☆✡囍㍿☯☰☲☱☴☵☶☳☷☜☞☚☛☟♤♧♡♢♠♣♥♦☀☁☂❄☃♨웃유❖☽☾☪✿♂♀✪✯☭➳卍卐√×■◆●○◐◑✙☺☻❀⚘♔♕♖♗♘♙♚♛♜♝♞♟♧♡♂♀♠♣♥❤☜☞☎☏⊙◎☺☻☼▧▨♨◐◑↔↕▪▒◊◦▣▤▥▦▩◘◈◇♬♪♩♭♪の★☆→あぃ￡Ю〓§♤♥▶¤✲❈✿✲❈➹☀☂☁【】┱┲❣✚✪✣✤✥✦❉❥❦❧❃❂❁❀✄☪☣☢☠☭ღ▶▷◀◁☀☁☂☃☄★☆☇☈⊙☊☋☌☍ⓛⓞⓥⓔ╬『』∴☀♫♬♩♭♪☆∷﹌の★◎▶☺☻►◄▧▨♨◐◑↔↕↘▀▄█▌◦☼♪の☆→♧ぃ￡❤▒▬♦◊◦♠♣▣۰•❤•۰►◄▧▨♨◐◑↔↕▪▫☼♦⊙●○①⊕◎Θ⊙¤㊣★☆♀◆◇◣◢◥▲▼△▽⊿◤◥✐✡✓✔✕✖♂♀♥♡☜☞☎☏⊙◎☺☻►◄▧▨♨◐◑↔↕♥♡▪▫☼♦▀▄█▌▐░▒▬♦◊◘◙◦☼♠♣▣▤▥▦▩◘◙◈♫♬♪♩♭♪✄☪☣☢☠♯♩♪♫♬♭♮☎☏☪ºº₪¤큐«»™♂✿
