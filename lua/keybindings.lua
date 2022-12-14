@@ -57,8 +57,8 @@ map("t", "<C-l>", [[ <C-\><C-N><C-w>l ]], opt)
 -- map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 -- 上下滚动浏览
-map("n", "<C-j>", "4j", opt)
-map("n", "<C-k>", "4k", opt)
+--map("n", "<C-j>", "4j", opt)
+--map("n", "<C-k>", "4k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
@@ -98,11 +98,11 @@ local pluginKeys = {}
 
 -- nvim-tree
 -- alt + m 键打开关闭tree
-map("n", "<C-m>", ":NvimTreeToggle<CR>", opt)
+map("n", "<F3>", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
   -- 打开文件或文件夹
-  { key = {"<CR>", "o", "<2-LeftMouse>"}, action = "edit" },
+--  { key = {"<CR>", "o", "<2-LeftMouse>"}, action = "edit" },
   -- 分屏打开文件
   { key = "v", action = "vsplit" },
   { key = "h", action = "split" },
