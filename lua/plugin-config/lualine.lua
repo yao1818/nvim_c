@@ -19,9 +19,6 @@ lualine.setup({
   sections = {
     lualine_b = {
         'branch',
---        symbols = {
---           icon = '*',
---        }
     },
     lualine_c = {
       { 'filename', file_status = false, path = 1 },

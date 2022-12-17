@@ -34,17 +34,18 @@ mason_config.setup({
   ensure_installed = {
     "sumneko_lua",
     "tsserver",
-    "tailwindcss",
+--    "tailwindcss",
     "bashls",
     "cssls",
-    "dockerls",
-    "emmet_ls",
+--    "dockerls",
+--    "emmet_ls",
     "html",
-    "jsonls",
+--    "jsonls",
     "pyright",
-    "rust_analyzer",
+--    "rust_analyzer",
     "taplo",
-    "yamlls",
+
+--    "yamlls",
 --    "gopls",
     "clangd",
     "cmake",
@@ -61,11 +62,11 @@ local servers = {
   pyright = require("lsp.config.pyright"),
   html = require("lsp.config.html"),
   cssls = require("lsp.config.css"),
-  emmet_ls = require("lsp.config.emmet"),
+--  emmet_ls = require("lsp.config.emmet"),
 --  jsonls = require("lsp.config.json"),
 --  tsserver = require("lsp.config.typescript"),
 --  yamlls = require("lsp.config.yamlls"),
-  dockerls = require("lsp.config.docker"),
+--  dockerls = require("lsp.config.docker"),
 --  tailwindcss = require("lsp.config.tailwindcss"),
 --  rust_analyzer = require("lsp.config.rust"),
 --  taplo = require("lsp.config.taplo"), -- toml
@@ -86,9 +87,4 @@ for name, config in pairs(servers) do
 end
 
 require("lsp.ui")
-
-
-
-
-
 
