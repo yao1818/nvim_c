@@ -48,6 +48,10 @@ require("gruvbox").setup({
       -- lsp
       DiagnosticSignWarn  = {bg = "", fg = "#fabd2f"},
       DiagnosticSignError = {bg = "", fg = "#fb4934"},
+      -- git signs
+      GitSignsAdd    = {bg = "", fg = "#b8bb26"},    --"#98971a"
+      GitSignsChange = {bg = "", fg = "#83a598"},    --"#458588"
+      GitSignsDelete = {bg = "", fg = "#fb4934"},    --"#cc241d"
 
   }
 })
