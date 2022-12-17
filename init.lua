@@ -23,4 +23,12 @@ require("lsp.setup")
 -- 自动补全
 require("lsp.cmp")
 
+-- 程序竖线
+--require("plugin-config.indent-blankline")
+
+-- git signs
+require("plugin-config.gitsigns")
+
+
+
 
