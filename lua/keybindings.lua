@@ -171,7 +171,7 @@ end
 pluginKeys.cmp = function(cmp)
     return {
         -- 出现补全
-        ["<Tab>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
+        ["<C-]>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
         -- 取消
         ["<A-,>"] = cmp.mapping({
             i = cmp.mapping.abort(),
@@ -191,7 +191,6 @@ pluginKeys.cmp = function(cmp)
         ["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
     }
 end
-
 
 
 return pluginKeys

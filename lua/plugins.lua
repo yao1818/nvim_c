@@ -44,14 +44,15 @@ packer.startup(
     -- 补全引擎  LSP补全不够好，需要这个补全支持
     use("hrsh7th/nvim-cmp")
     -- Snippet 引擎
-    use("L3MON4D3/LuaSnip")
-    use("saadparwaiz1/cmp_luasnip")
+--    use("L3MON4D3/LuaSnip")
+--    use("saadparwaiz1/cmp_luasnip")
+    use("hrsh7th/vim-vsnip")
     -- 补全源
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
     use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
     use("hrsh7th/cmp-path") -- { name = 'path' }
-    use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+--    use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
     use("hrsh7th/cmp-nvim-lsp-signature-help") -- { name = 'nvim_lsp_signature_help' }
     -- 常见编程语言代码段
     use("rafamadriz/friendly-snippets")
@@ -68,9 +69,9 @@ packer.startup(
     -- Lua 增强
     use("folke/neodev.nvim")
     -- JSON 增强
-    use("b0o/schemastore.nvim")
+--    use("b0o/schemastore.nvim")
     -- Rust 增强
-    use("simrat39/rust-tools.nvim")
+--    use("simrat39/rust-tools.nvim")
 
 end)
 
