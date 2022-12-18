@@ -46,7 +46,7 @@ map("n", "s=", "<C-w>=", opt)
 -- Terminal相关
 map("n", "<C-t>", ":terminal<CR>", opt)
 map("n", "<C-vt>", ":vsp | terminal<CR>", opt)
-map("t", "<C-b>", "<C-\\><C-n>", opt)
+map("t", "<A-b>", "<C-\\><C-n>", opt)
 map("t", "<C-h>", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<C-j>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<C-k>", [[ <C-\><C-N><C-w>k ]], opt)
