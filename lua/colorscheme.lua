@@ -43,7 +43,7 @@ require("gruvbox").setup({
       Conditional  = {fg = "#d79921"},
       Repeat       = {fg = "#d79921"},
       Special      = {fg = "#d5c4a1"}, -- #d5c4a1
-      StorageClass = {fg = "#d5c4a1"},
+      StorageClass = {fg = "#8ec07c"},
       Operator     = {fg = "#d5c4a1"},
       -- lsp
       DiagnosticSignWarn  = {bg = "", fg = "#fabd2f"},

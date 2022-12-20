@@ -1,7 +1,7 @@
 -- 自定义图标
 vim.diagnostic.config({
   virtual_text = false,
-  signs = true,
+  signs = false,
   update_in_insert = false,
   underline = false,
   show_header = false,
