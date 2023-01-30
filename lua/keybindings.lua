@@ -73,6 +73,8 @@ map("i", "<C-l>", "<ESC>A", opt)
 -- norm 模式下设置 - 为调到行尾， 默认0位调到行首
 map("n", "-", "$", opt)
 
+map("n", "<T-l>", "$", opt)
+
 -- 输入模式下bb映射为退出输入模式
 map("i", "bb", "<Esc>", opt)
 map("i", "BB", "<Esc>", opt)
@@ -82,11 +84,14 @@ map("i", "BB", "<Esc>", opt)
 map("n", "<space>", ":", opt)
 
 --map("c", "W", "w", opt)
--- 取消norm模式下大写 J H K L 出发的功能，防止误触发
+-- 取消norm模式下大写 J H K L 触发的功能，防止误触发
 map("n", "J", "", opt)
 map("n", "H", "", opt)
 map("n", "K", "", opt)
 map("n", "L", "", opt)
+
+-- 取消virtual模式下大写 J 触发的功能，防止误触发
+map("v", "J", "", opt)
 
 -- Telescope
 -- 查找文件
