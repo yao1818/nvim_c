@@ -73,7 +73,8 @@ map("i", "<C-l>", "<ESC>A", opt)
 -- norm 模式下设置 - 为调到行尾， 默认0位调到行首
 map("n", "-", "$", opt)
 
-map("n", "<T-l>", "$", opt)
+map("n", "<c-i>l", "$", opt)
+map("n", "<c-i>h", "0", opt)
 
 -- 输入模式下bb映射为退出输入模式
 map("i", "bb", "<Esc>", opt)
