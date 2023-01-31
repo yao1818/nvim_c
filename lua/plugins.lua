@@ -9,7 +9,8 @@ packer.startup(
    -- 你的插件列表...
    --------------------------------Colorshchemes-------------------------------
    --use 'folke/tokyonight.nvim'
-   use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
+   use({ "ellisonleao/gruvbox.nvim",
+         requires = { "rktjmp/lush.nvim", commit = "979f4d206e7111c2b710aa85cc723f6140d2ec98"} })
 --   use 'christianchiarulli/nvcode-color-schemes.vim'
 --   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
    -- use 'shaunsingh/nord.nvim'
@@ -18,29 +19,34 @@ packer.startup(
 
    --------------------------------Plugins-------------------------------------
    -- nvim-tree (左侧文件浏览器)
-   use({ "kyazdani42/nvim-tree.lua", commit = "e14989c0eaa6f9c299d48f7e45ce1ed04b21180f", requires = {"kyazdani42/nvim-web-devicons", opt = true} })
+   use({ "kyazdani42/nvim-tree.lua", commit = "e14989c0eaa6f9c299d48f7e45ce1ed04b21180f",
+         requires = {"kyazdani42/nvim-web-devicons", commit = "c873091fe237f22c915905c4c0c3a82cbfce5f4d",
+         opt = true} })
    -- bufferline
 --   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-   use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
+   use({ "akinsho/bufferline.nvim", commit = "d631817de1b52c7b1947e25ec8b7638492914768",
+         requires = { "kyazdani42/nvim-web-devicons", commit = "c873091fe237f22c915905c4c0c3a82cbfce5f4d",
+         "moll/vim-bbye" }})
    -- lualine
    --use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-   use("nvim-lualine/lualine.nvim")
+   use({"nvim-lualine/lualine.nvim", commit = "bfa0d99ba6f98d077dd91779841f1c88b7b5c165"})
    use("arkav/lualine-lsp-progress")
    -- telescope
-   use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+   use { 'nvim-telescope/telescope.nvim', commit = "cabf991b1d3996fa6f3232327fc649bbdf676496",
+         requires = { "nvim-lua/plenary.nvim", commit = "9e7c62856e47053ec7b17f82c5da0f1e678d92c8"} }
    -- telescope extensions
    use "LinArcX/telescope-env.nvim"
    -- dashboard-nvim
-   use("glepnir/dashboard-nvim")
+   use({"glepnir/dashboard-nvim", commit = "5ccce7b50c8ce81c01956864ff51b455ee6933c4"})
    -- treesitter
-   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+   use({ "nvim-treesitter/nvim-treesitter", commit = "507527711fdd8f701544024aeb1a9a068f986d89", run = ":TSUpdate" })
 
    -- LSP
    -- use("williamboman/nvim-lsp-installer")
    -- Lspconfig
    use({ "williamboman/mason.nvim" })
    use({ "williamboman/mason-lspconfig.nvim" })
-   use({ "neovim/nvim-lspconfig" })
+   use({ "neovim/nvim-lspconfig", commit = "cbf8762f15fac03a51eaa2c6f983d4a5045c95b4"})
     -- 补全引擎  LSP补全不够好，需要这个补全支持
     use("hrsh7th/nvim-cmp")
     -- Snippet 引擎
@@ -58,7 +64,9 @@ packer.startup(
     use("rafamadriz/friendly-snippets")
     -- UI 增强
     use("onsails/lspkind-nvim")
-    use("tami5/lspsaga.nvim")
+--    use("tami5/lspsaga.nvim")
+    use("glepnir/lspsaga.nvim")
+ 
     -- 代码格式化
 --    use("mhartington/formatter.nvim")
     use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
@@ -74,10 +82,11 @@ packer.startup(
     -- Rust 增强
 --    use("simrat39/rust-tools.nvim")
     -- indent-blankline
-    use("lukas-reineke/indent-blankline.nvim")
+    use({"lukas-reineke/indent-blankline.nvim", commit = "fa1ab3047b38f8e3348f1e6b084c81cff860af74"})
+ 
     -- git 更改的标志
     use {
-      'lewis6991/gitsigns.nvim',
+      'lewis6991/gitsigns.nvim', commit = "9ff7dfb051e5104088ff80556203634fc8f8546d",
       config = function()
         require('gitsigns').setup()
       end
