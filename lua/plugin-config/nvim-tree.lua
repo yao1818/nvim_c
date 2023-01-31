@@ -9,6 +9,8 @@ end
 -- 列表操作快捷键
 local list_keys = require('keybindings').nvimTreeList
 nvim_tree.setup({
+--    open_on_setup = true,
+--    open_on_setup_file = false,
     -- 不显示 git 状态图标
     git = {
         enable = false,

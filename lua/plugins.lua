@@ -8,7 +8,7 @@ packer.startup(
    use 'wbthomason/packer.nvim'
    -- 你的插件列表...
    --------------------------------Colorshchemes-------------------------------
-   use 'folke/tokyonight.nvim'
+   --use 'folke/tokyonight.nvim'
    use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
 --   use 'christianchiarulli/nvcode-color-schemes.vim'
 --   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
@@ -18,7 +18,7 @@ packer.startup(
 
    --------------------------------Plugins-------------------------------------
    -- nvim-tree (左侧文件浏览器)
-   use({ "kyazdani42/nvim-tree.lua", requires = {"kyazdani42/nvim-web-devicons", opt = true} })
+   use({ "kyazdani42/nvim-tree.lua", commit = "e14989c0eaa6f9c299d48f7e45ce1ed04b21180f", requires = {"kyazdani42/nvim-web-devicons", opt = true} })
    -- bufferline
 --   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
@@ -66,6 +66,7 @@ packer.startup(
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
     use("jose-elias-alvarez/typescript.nvim")
 
+    use {'simrat39/symbols-outline.nvim'}
     -- Lua 增强
     use("folke/neodev.nvim")
     -- JSON 增强

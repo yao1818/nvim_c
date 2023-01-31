@@ -94,6 +94,8 @@ map("n", "L", "", opt)
 -- 取消virtual模式下大写 J 触发的功能，防止误触发
 map("v", "J", "", opt)
 
+map("n", "<C-s>", ":SymbolsOutline<CR>", opt)
+
 -- Telescope
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)

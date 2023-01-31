@@ -29,6 +29,6 @@ require("lsp.cmp")
 -- git signs
 require("plugin-config.gitsigns")
 
-
+require("plugin-config.symbols-outline")
 
 
