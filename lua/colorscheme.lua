@@ -34,17 +34,21 @@ require("gruvbox").setup({
   overrides = {
       SignColumn   = {bg = ""},
       Constant     = {fg = "#83a598"}, --emnu 等常量 #689d6a
-      Function     = {fg = "#fabd2f", bold = true},  --#fabd2f  d79921
+      Function     = {fg = "#b8bb50", bold = true},  --#fabd2f  d79921
       Define       = {fg = "#83a598"}, -- #define
-      Include      = {fg = "#83a598"}, -- #include
+      Include      = {fg = "#83a598"}, -- #Include
+      String       = {fg = "#83a598"},
       Macro        = {fg = "#83a598"}, -- #define XXX
       Type         = {fg = "#8ec07c"},
-      Number       = {fg = "#b8bb26"}, -- #d3869d #fe8019 
+      Number       = {fg = "#fabd2f"}, -- #d3869d #fe8019 
       Conditional  = {fg = "#d79921"},
       Repeat       = {fg = "#d79921"},
       Special      = {fg = "#d5c4a1"}, -- #d5c4a1
       StorageClass = {fg = "#8ec07c"},
       Operator     = {fg = "#d5c4a1"},
+      Search       = {fg = "#928374"}, -- 搜索的背景颜色
+      IncSearch    = {fg = "#928374"}, -- 光标指向搜索文字时颜色
+
       -- lsp
       DiagnosticSignWarn  = {bg = "", fg = "#fabd2f"},
       DiagnosticSignError = {bg = "", fg = "#fb4934"},
