@@ -73,6 +73,7 @@ map("i", "<C-l>", "<ESC>A", opt)
 -- norm 模式下设置 - 为调到行尾， 默认0位调到行首
 map("n", "-", "$", opt)
 
+-- Tab+l:光标移动文档尾  Tab+h:光标移动文档头 **<c-i> 为Tab键值**
 map("n", "<c-i>l", "$", opt)
 map("n", "<c-i>h", "0", opt)
 
@@ -94,6 +95,7 @@ map("n", "L", "", opt)
 -- 取消virtual模式下大写 J 触发的功能，防止误触发
 map("v", "J", "", opt)
 
+-- 打开 函数变量名预览 类似TagList功能
 map("n", "<C-s>", ":SymbolsOutline<CR>", opt)
 
 -- Telescope
