@@ -96,7 +96,7 @@ map("n", "L", "", opt)
 map("v", "J", "", opt)
 
 -- 打开 函数变量名预览 类似TagList功能
-map("n", "<C-s>", ":SymbolsOutline<CR>", opt)
+map("n", "<c-i>l", ":SymbolsOutline<CR>", opt)
 
 -- Telescope
 -- 查找文件
