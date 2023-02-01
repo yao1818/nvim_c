@@ -2,7 +2,7 @@
 
 
 -- key leader
-vim.g.mapleader = "<Fn>"
+vim.g.mapleader = "<c-i>"
 vim.g.maplocalleader = "<Fn>"
 
 -- 保存本地变量
@@ -96,13 +96,15 @@ map("n", "L", "", opt)
 map("v", "J", "", opt)
 
 -- 打开 函数变量名预览 类似TagList功能
-map("n", "<c-i>l", ":SymbolsOutline<CR>", opt)
+map("n", "<c-i>f", ":SymbolsOutline<CR>", opt)
 
 -- Telescope
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+-- 搜索buffer
+map("n", "<C-g>", ":Telescope buffers<CR>", opt)
 
 
 
