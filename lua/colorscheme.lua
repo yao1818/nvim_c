@@ -38,12 +38,15 @@ require("gruvbox").setup({
       Define       = {fg = "#83a598"}, -- #define
       Include      = {fg = "#83a598"}, -- #Include
       String       = {fg = "#83a598"},
+      Keyword      = {fg = "#83a598"},
       Macro        = {fg = "#83a598"}, -- #define XXX
       Type         = {fg = "#8ec07c"},
       Number       = {fg = "#fabd2f"}, -- #d3869d #fe8019 
-      Conditional  = {fg = "#d79921"},
+      Conditional  = {fg = "#d79921"}, --d79921 橘色  fabd2f 黄色
+      Identifier   = {fg = "#d5c4a1"}, -- 局部变量
+--      Boolean      = {fg = "#fabd2f"},
       Repeat       = {fg = "#d79921"},
-      Special      = {fg = "#d5c4a1"}, -- #d5c4a1
+      Special      = {fg = "#d5c4a1"}, -- #d5c4a1 白色偏深
       StorageClass = {fg = "#8ec07c"},
       Operator     = {fg = "#d5c4a1"},
       Search       = {fg = "#928374"}, -- 搜索的背景颜色
