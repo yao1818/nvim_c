@@ -70,8 +70,8 @@ map("n", "<C-d>", "9j", opt)
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
--- norm 模式下设置 - 为调到行尾， 默认0位调到行首
-map("n", "-", "$", opt)
+-- -- norm 模式下设置 - 为调到行尾， 默认0位调到行首
+-- map("n", "-", "$", opt)
 
 -- Tab+l:光标移动文档尾  Tab+h:光标移动文档头 **<c-i> 为Tab键值**
 map("n", "<c-i>l", "$", opt)
