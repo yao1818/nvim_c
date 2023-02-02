@@ -50,7 +50,7 @@ require("gruvbox").setup({
       StorageClass = {fg = "#8ec07c"},
       Operator     = {fg = "#d5c4a1"},
       Search       = {fg = "#928374"}, -- 搜索的背景颜色
-      IncSearch    = {fg = "#928374"}, -- 光标指向搜索文字时颜色
+      IncSearch    = {fg = "#d79921"}, -- 光标指向搜索文字时颜色
       CursorLine   = {bg = "#282828"},
       -- lsp
       DiagnosticSignWarn  = {bg = "", fg = "#fabd2f"},
