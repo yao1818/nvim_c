@@ -78,9 +78,11 @@ map("n", "<c-i>l", "$", opt)
 map("n", "<c-i>h", "0", opt)
 
 -- 输入模式下bb映射为退出输入模式
-map("i", "bb", "<Esc>", opt)
-map("i", "BB", "<Esc>", opt)
+-- map("i", "bb", "<Esc>", opt)
+-- map("i", "BB", "<Esc>", opt)
 
+map("i", "<C-i>", "<Esc>", opt)
+map("i", "<C-I>", "<Esc>", opt)
 
 -- norm模式下space代表输入命令
 map("n", "<space>", ":", opt)
@@ -163,7 +165,7 @@ pluginKeys.mapLSP = function(mapbuf)
   mapbuf("n", "C-]", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
   mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)          --弹窗查看函数的定义提示
   mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)    --跳转函数声明
-  mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt) --跳转到函数实现中
+  mapbuf("n", "gm", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt) --跳转到函数实现中
   mapbuf("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opt)     --列出函数 被引用的地方
   -- diagnostic
   mapbuf("n", "gp", "<cmd>lua vim.diagnostic.open_float()<CR>", opt)
