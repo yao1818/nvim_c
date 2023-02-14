@@ -32,7 +32,7 @@ mason.setup({
 -- https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
 mason_config.setup({
   ensure_installed = {
-    "sumneko_lua",
+--    "sumneko_lua",
     "tsserver",
 --    "tailwindcss",
     "bashls",
@@ -57,7 +57,7 @@ mason_config.setup({
 -- key 必须为下列网址列出的 server name，不可以随便写
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local servers = {
-  sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
+--  sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   bashls = require("lsp.config.bash"),
   pyright = require("lsp.config.pyright"),
   html = require("lsp.config.html"),
