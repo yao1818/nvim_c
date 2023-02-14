@@ -28,6 +28,7 @@ map("n", "<C-l>", "<C-w>l", opt)
 
 -- 关闭高亮
 map("n", "gs", ":noh<CR>", opt)
+map("n", "GS", ":noh<CR>", opt)
 
 -- 左右比例控制
 map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
