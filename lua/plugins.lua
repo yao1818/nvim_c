@@ -19,7 +19,7 @@ packer.startup(
 
    --------------------------------Plugins-------------------------------------
    -- nvim-tree (左侧文件浏览器)
-   use({ "kyazdani42/nvim-tree.lua", commit = "e14989c0eaa6f9c299d48f7e45ce1ed04b21180f",
+   use({ "yao1818/nvim-tree.lua", branch = "dev",
          requires = {"kyazdani42/nvim-web-devicons", commit = "c873091fe237f22c915905c4c0c3a82cbfce5f4d",
          opt = true} })
    -- bufferline
