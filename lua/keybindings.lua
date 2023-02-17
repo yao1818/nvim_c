@@ -2,7 +2,7 @@
 
 
 -- key leader
-vim.g.mapleader = "<c-i>"
+vim.g.mapleader = ""
 vim.g.maplocalleader = "<Fn>"
 
 -- 保存本地变量
@@ -10,6 +10,7 @@ local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
 local opt = {noremap = true, silent = true }
 
+map("n", "c-i", "", opt)
 -- 取消 s 默认功能
 map("n", "s", "", opt)
 -- 分屏快捷键

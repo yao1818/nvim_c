@@ -23,12 +23,10 @@ packer.startup(
          requires = {"kyazdani42/nvim-web-devicons", commit = "c873091fe237f22c915905c4c0c3a82cbfce5f4d",
          opt = true} })
    -- bufferline
---   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
    use({ "akinsho/bufferline.nvim", commit = "d631817de1b52c7b1947e25ec8b7638492914768",
          requires = { "kyazdani42/nvim-web-devicons", commit = "c873091fe237f22c915905c4c0c3a82cbfce5f4d",
          "moll/vim-bbye" }})
    -- lualine
-   --use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
    use({"nvim-lualine/lualine.nvim", commit = "bfa0d99ba6f98d077dd91779841f1c88b7b5c165"})
    use("arkav/lualine-lsp-progress")
    -- telescope
@@ -48,7 +46,7 @@ packer.startup(
    use({ "williamboman/mason-lspconfig.nvim" })
    use({ "neovim/nvim-lspconfig", commit = "cbf8762f15fac03a51eaa2c6f983d4a5045c95b4"})
     -- 补全引擎  LSP补全不够好，需要这个补全支持
-    use("hrsh7th/nvim-cmp")
+    use({"hrsh7th/nvim-cmp", commit = "ea9eaff5739856f3187d228d2c1181ea49fd4697"})
     -- Snippet 引擎
 --    use("L3MON4D3/LuaSnip")
 --    use("saadparwaiz1/cmp_luasnip")
