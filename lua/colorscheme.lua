@@ -33,7 +33,8 @@ require("gruvbox").setup({
   transparent_mode = false,
   overrides = {
       SignColumn   = {bg = ""},
-      Constant     = {fg = "#83a598"}, --emnu 等常量 #689d6a
+      Character     = {fg = "#fabd2f"}, --emnu 等常量 #689d6a
+      Constant     = {fg = "#83a598"}, --emnu 等常量 #689d6a    #b16286粉色
       Function     = {fg = "#b8bb50", bold = true},  --#fabd2f  d79921
       Define       = {fg = "#83a598"}, -- #define
       Include      = {fg = "#83a598"}, -- #Include
@@ -47,11 +48,26 @@ require("gruvbox").setup({
 --      Boolean      = {fg = "#fabd2f"},
       Repeat       = {fg = "#d79921"},
       Special      = {fg = "#d5c4a1"}, -- #d5c4a1 白色偏深
-      StorageClass = {fg = "#8ec07c"},
-      Operator     = {fg = "#d5c4a1"},
+      StorageClass = {fg = "#8ec07c"}, -- struct等
+      Operator     = {fg = "#d5c4a1"},  -- 等于号 等
       Search       = {fg = "#928374"}, -- 搜索的背景颜色
       IncSearch    = {fg = "#d79921"}, -- 光标指向搜索文字时颜色
       CursorLine   = {bg = "#282828"},
+
+--      MatchParen    = {fg = "#b16286"},  --光标在括号上显示的颜色
+      SpecialKey    = {fg = "#b16286"},
+      Exception     = {fg = "#b16286"},
+      PreCondit     = {fg = "#83a598"},  -- ifdef
+      PreProc       = {fg = "#b16286"},
+      SpecialChar   = {fg = "#b16286"},
+      SpecialComment= {fg = "#b16286"},
+      Statement     = {fg = "#b16286"},
+      Structure     = {fg = "#8ec07c"},
+      Todo          = {fg = "#8ec07c"},
+      Typedef       = {fg = "#b16286"},
+
+
+
       -- lsp
       DiagnosticSignWarn  = {bg = "", fg = "#fabd2f"},
       DiagnosticSignError = {bg = "", fg = "#fb4934"},

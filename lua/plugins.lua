@@ -39,6 +39,7 @@ packer.startup(
    -- treesitter
    use({ "nvim-treesitter/nvim-treesitter", commit = "507527711fdd8f701544024aeb1a9a068f986d89", run = ":TSUpdate" })
 
+   use ({'nvim-treesitter/playground', after = 'nvim-treesitter'})
    -- LSP
    -- use("williamboman/nvim-lsp-installer")
    -- Lspconfig
@@ -89,6 +90,8 @@ packer.startup(
         require('gitsigns').setup()
       end
     }
+    use {'tanvirtin/vgit.nvim', requires = {'nvim-lua/plenary.nvim'}
+}
 end)
 
 
