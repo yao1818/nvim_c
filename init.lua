@@ -17,7 +17,7 @@ require("plugin-config.telescope")
 
 require("plugin-config.nvim-treesitter")
 
--- 配置语法高亮使用
+-- 配置语法高亮使用 配合nvim-treesitter
 -- require("plugin-config.playground")
 
 -- 内置LSP
