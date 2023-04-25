@@ -86,7 +86,7 @@ vim.opt.clipboard:append("unnamedplus")
 --
 --
 --}
-
-
+vim.g.mkdp_browser = '/usr/bin/google-chrome'
+vim.g.vim_markdown_folding_disabled = 1
 
 --vim.opt.foldtext = "v:lua.require('utils.simple_fold').simple_fold()"

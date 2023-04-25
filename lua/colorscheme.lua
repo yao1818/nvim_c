@@ -21,9 +21,9 @@ require("gruvbox").setup({
   underline = false,
   bold = true,
   italic =  {
-     strings = true,
-     operators = true,
-     comments = true,
+     strings = false,
+     operators = false,
+     comments = false,
   },
   strikethrough = true,
   invert_selection = false,
