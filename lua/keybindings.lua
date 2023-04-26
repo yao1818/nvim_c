@@ -112,7 +112,7 @@ map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- 搜索buffer
 map("n", "<C-g>", ":Telescope buffers<CR>", opt)
 
-map("n", "<c-i>m", ":MarkdownPreviewToggle<CR>", opt)
+map("n", "<c-i>m", ":MarkdownPreview<CR>", opt)
 
 ---------------------------------插件快捷键----------------------------------
 local pluginKeys = {}
