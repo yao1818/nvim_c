@@ -114,6 +114,21 @@ map("n", "<C-g>", ":Telescope buffers<CR>", opt)
 
 map("n", "<c-i>m", ":MarkdownPreview<CR>", opt)
 
+map("i", "<c-i>f", "<Esc>/<++><CR>:nohlsearch<CR>c4l", opt)
+map("i", "<c-i>b", "**** <++><Esc>F*hi", opt)
+map("i", "<c-i>n", "---<Enter><Enter>", opt)
+map("i", "<c-i>s", "~~~~ <++><Esc>F~hi", opt)
+map("i", "<c-i>i", "** <++><Esc>F*i", opt)
+map("i", "<c-i>d", "`` <++><Esc>F`i", opt) -- 行内代码
+map("i", "<c-i>c", "```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA", opt)
+map("i", "<c-i>h", "====<Space><++><Esc>F=hi", opt) -- Hightligh
+map("i", "<c-i>p", "![](<++>) <++><Esc>F[a", opt)
+map("i", "<c-i>a", "[](<++>) <++><Esc>F[a", opt)
+map("i", "<c-i>l", "___________________________________________________________________<Enter>", opt)
+
+
+
+
 ---------------------------------插件快捷键----------------------------------
 local pluginKeys = {}
 
