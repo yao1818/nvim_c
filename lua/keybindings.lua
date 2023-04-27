@@ -114,15 +114,15 @@ map("n", "<C-g>", ":Telescope buffers<CR>", opt)
 
 map("n", "<c-i>m", ":MarkdownPreview<CR>", opt)
 
-map("i", "<C-f>", "<Esc>/<++><CR>:nohlsearch<CR>c4l", opt)
-map("i", "<C-b>", "**** <++><Esc>F*hi", opt)
-map("i", "<C-s>", "~~~~ <++><Esc>F~hi", opt)
-map("i", "<C-o>", "** <++><Esc>F*i", opt)
-map("i", "<C-d>", "`` <++><Esc>F`i", opt) -- 行内代码
-map("i", "<C-c>", "```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA", opt)
-map("i", "<C-h>", "====<Space><++><Esc>F=hi", opt) -- Hightligh
-map("i", "<C-p>", "![](<++>) <++><Esc>F[a", opt)
-map("i", "<C-a>", "[](<++>) <++><Esc>F[a", opt)
+map("i", "<C-f>", "<Esc>/<+><CR>:nohlsearch<CR>c4l", opt)
+map("i", "<C-b>", "**** <+><Esc>F*hi", opt)
+map("i", "<C-s>", "~~~~ <+><Esc>F~hi", opt)
+map("i", "<C-o>", "** <+><Esc>F*i", opt)
+map("i", "<C-d>", "`` <+><Esc>F`i", opt) -- 行内代码
+map("i", "<C-c>", "```<Enter><+><Enter>```<Enter><Enter><+><Esc>4kA", opt)
+map("i", "<C-h>", "====<Space><+><Esc>F=hi", opt) -- Hightligh
+map("i", "<C-p>", "![]() <Esc>F[a", opt)
+map("i", "<C-a>", "[]() <Esc>F[a", opt)
 map("i", "<C-l>", "___<Enter><Enter>", opt)
 map("i", "<C-t>", "- [ ] ", opt)
 map("i", "<C-j>", "> ", opt) -- Block ctrl
