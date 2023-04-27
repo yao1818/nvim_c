@@ -120,10 +120,10 @@ map("i", "<C-s>", "~~~~ <+><Esc>F~hi", opt)
 map("i", "<C-o>", "** <+><Esc>F*i", opt)
 map("i", "<C-d>", "`` <+><Esc>F`i", opt) -- 行内代码
 map("i", "<C-c>", "```<Enter><+><Enter>```<Enter><Enter><+><Esc>4kA", opt)
-map("i", "<C-h>", "====<Space><+><Esc>F=hi", opt) -- Hightligh
+map("i", "<C-y>", "====<Space><+><Esc>F=hi", opt) -- Hightligh
 map("i", "<C-p>", "![]() <Esc>F[a", opt)
 map("i", "<C-a>", "[]() <Esc>F[a", opt)
-map("i", "<C-l>", "___<Enter><Enter>", opt)
+map("i", "<C-n>", "___<Enter><Enter>", opt)
 map("i", "<C-t>", "- [ ] ", opt)
 map("i", "<C-j>", "> ", opt) -- Block ctrl
 
