@@ -125,7 +125,8 @@ map("i", "<c-i>h", "====<Space><++><Esc>F=hi", opt) -- Hightligh
 map("i", "<c-i>p", "![](<++>) <++><Esc>F[a", opt)
 map("i", "<c-i>a", "[](<++>) <++><Esc>F[a", opt)
 map("i", "<c-i>l", "___________________________________________________________________<Enter>", opt)
-
+map("i", "<c-i>t", "- [ ] ", opt)
+map("i", "<c-i>j", "> ", opt) -- Block ctrl
 
 
 
