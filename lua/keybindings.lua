@@ -10,6 +10,8 @@ local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
 local opt = {noremap = true, silent = true }
 
+local var
+
 map("n", "c-i", "", opt)
 -- 取消 s 默认功能
 map("n", "s", "", opt)
@@ -127,7 +129,8 @@ map("i", "<C-n>", "___<Enter><Enter>", opt)
 map("i", "<C-t>", "- [ ] ", opt)
 map("i", "<C-j>", "> ", opt) -- Block ctrl
 
-
+-- 获取时间戳
+map("n", "<C-n>", ":r!date '+\\%F \\%H:\\%M'<CR>", opt)
 
 ---------------------------------插件快捷键----------------------------------
 local pluginKeys = {}
