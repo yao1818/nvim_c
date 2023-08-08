@@ -5,6 +5,8 @@ require('keybindings')
 
 require("plugins")
 
+require("G")
+
 -- 主题设置
 require("colorscheme")
 

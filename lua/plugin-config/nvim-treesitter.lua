@@ -1,3 +1,5 @@
+local G = require('G')
+
 
 local status, treesitter = pcall(require, "nvim-treesitter.configs")
 if not status then
@@ -15,6 +17,29 @@ treesitter.setup({
 --    disable = { "vim" },
     additional_vim_regex_highlighting = false,
   },
+
+  G.hi({
+        ["@function"] = { fg = "#B8BB50", bold = true};
+        ["@function.call"] = { fg = "#B8BB50", bold = true};
+        ["@storageclass"] = { fg = "#83A598", bold = false};
+        ["@constant"] = { fg = "#83A598", bold = false};
+        ["@type"] = { fg = "#83A598", bold = false};
+        ["@type.builtin"] = { fg = "#83A598", bold = false};
+        ["@string"] = { fg = "#83A598", bold = false};
+        ["@keyword"] = { fg = "#83A598", bold = false};
+        ["@repeat"] = { fg = "#fabd2f", bold = false};
+        --["@keyword.return"] = { fg = "#fabd2f", bold = false};
+        ["@conditional"] = { fg = "#fabd2f", bold = false};
+        ["@punctuation.bracket"] = { fg = "#d5c4a1", bold = false};
+        ["@punctuation.delimiter"] = { fg = "#d5c4a1", bold = false};  -- 6AB97C green DEB34D
+        ["@number"] = { fg = "#fabd2f", bold = false};
+        ["@variable"] = { fg = "#d5c4a1", bold = false};
+        ["@parameter"] = { fg = "#d5c4a1", bold = false};
+        ["@property"] = { fg = "#d5c4a1", bold = false};
+        ["@operator"] = { fg = "#bfc4a1", bold = false};
+
+  }),
+
 })
 
 -- -- 启用增量选择模块

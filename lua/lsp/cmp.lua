@@ -53,4 +53,14 @@ cmp.setup.cmdline(":", {
   }, {
     { name = "cmdline" },
   }),
+
+-- 解决Lsp语法高亮和Treesitter语法高亮冲突的问题
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+    client.server_capabilities.semanticTokensProvider = nil
+  end
+})
+
 })
