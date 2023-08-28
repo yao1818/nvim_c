@@ -20,6 +20,8 @@ treesitter.setup({
 
   G.hi({
         ["@function"] = { fg = "#B8BB50", bold = true};
+        ["@method"] = { fg = "#B8BB50", bold = true};
+        ["@constructor"] = { fg = "#B8BB50", bold = true};
         ["@function.call"] = { fg = "#B8BB50", bold = true};
         ["@storageclass"] = { fg = "#83A598", bold = false};
         ["@constant"] = { fg = "#83A598", bold = false};
